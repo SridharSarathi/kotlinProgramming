@@ -9,7 +9,12 @@ fun main()
     //String to Char
     var str=77;
     var ch=str.toChar();
-    print(ch)
+    println(ch+"--")
+    var ss:Char='S';
+     var cs=ss.toInt();
+    println(cs);
+
+//    byte--boolean--char--short--int--float--double--long
     //methods
 //    toString()
 //    toChar()
@@ -18,4 +23,17 @@ fun main()
 //    toShort()
 //    toDouble()
 //    toFloat()
+//    toInt()
+    val numbers: String = "123"
+    val numbersAsInt = numbers.toInt() // Same as: Integer.parseInt(numbers)
+    println(numbersAsInt) // prints "123"
+    var y='4';
+    println(y.digitToInt());
+    //Characters
+    var char='5';
+    println(Character.getNumericValue(char));
+
+
+
+
 }
