@@ -41,5 +41,40 @@ fun main()
     println("23 less than or equal 88 "+(p>m));
     println("23 greater tha 88 "+(p>m));
 
+    //bitwise OR
+    println(12 or 33);
+//  0000 1100
+//  0010 0001
+//  -----------
+//  0010 1101   --45
+    println(34 and 78);
+   /*
+            0010 0010
+            0100 1110
+            ---------
+            0000 0010  --2
+   * */
+    println(7 xor 4);
+    /*
+        0111
+        0100
+        ----
+        0011  -3
+    */
+    //inv()--methods
+    println(35.inv());
+//    00100011
+//    ________
+//    11011100  = 220 (In decimal)
+//    left shift operator
+    println(3 shl 1);
+//    0011
+//    0110 --6
+    println(87 shr 5);
+//    0000 0010  -2
+    println(10 ushr 2);
+//    0101    1010
+//       0010
 
 }
+
