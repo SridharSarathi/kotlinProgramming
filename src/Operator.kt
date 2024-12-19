@@ -75,6 +75,7 @@ fun main()
     println(10 ushr 2);
 //    0101    1010
 //       0010
-
+//double dot operator
+    println(1..5);
 }
 

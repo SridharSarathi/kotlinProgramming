@@ -46,6 +46,7 @@ fun main(args: Array<String>)
     var sby=scn.nextByte();
     println("Character ${sc}\n Integer ${sIn}\n float ${sfl}\n short ${ssh}\n double ${sdou}\n Long${slo}\n");
 
+    print(10.toString()+89.toString());
 
 
 
