@@ -6,8 +6,12 @@ fun main() {
     var dou=8.09;//Double
     var initial='R';//Char
     var lon=4322344904504L;//long
+    var bool=true;
+    var byt:Byte=78;
 
-    print(name+"\n"+num+"\n"+fra+"\n"+dou+"\n"+initial+"\n"+lon);
+    print(name+"\n"+(num+8)+"\n"+fra+"\n"+dou+"\n"+initial+"\n"+lon+"\n"+bool+"\n"+byt);
+
+
 
 
 
