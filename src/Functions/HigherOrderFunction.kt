@@ -1,0 +1,12 @@
+package Functions
+
+fun myFun(org: String,portal: String, fn: (String,String) -> String): Unit {
+    val result = fn(org,portal)
+    println(result)
+}
+
+fun main(args: Array<String>){
+    val fn:(String,String)->String={org,portal->"$org develop $portal"}
+    println(fn);
+    myFun("sssit.org","javatpoint.com",fn)
+}

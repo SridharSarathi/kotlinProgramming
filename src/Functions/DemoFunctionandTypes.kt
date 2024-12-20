@@ -5,6 +5,7 @@ fun main()
     parameterOnlyNoreturn(9090,23424);
     print(NoparameterWithRetrun());
     NoparameterNoRetrun();
+    println(vote(9));
 
 }
 fun ParameterWithReturn(i:Int,S:Float):Float
@@ -22,5 +23,7 @@ fun NoparameterWithRetrun():String
 }
 fun NoparameterNoRetrun()
 {
-    print("No Return no parameter");
+    println("No Return no parameter");
 }
+//Function as expression
+fun vote(a:Int)=if(a>18) "adult" else "kid";
