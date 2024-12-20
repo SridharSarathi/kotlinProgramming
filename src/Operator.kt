@@ -77,5 +77,12 @@ fun main()
 //       0010
 //double dot operator
     println(1..5);
+//-> Arrow operator
+//    ->  its allows separate diffrent block of code
+    var Arrow=1;
+    when(Arrow)
+    {
+       1-> println(Arrow);
+    }
 }
 
