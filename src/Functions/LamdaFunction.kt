@@ -2,9 +2,7 @@ package Function
  data class choclate( var name:String, var price:Int)
 
 fun main(){
-     var mylamda={
-         a:Int-> a+89;
-     }
+     var mylamda={a:Int-> a+89; }
     println(mylamda(10));//99
    var candy= listOf(
        choclate("Cadbury",100),
@@ -20,18 +18,23 @@ println("Lamda");
     println("Single Parameter Lamda");
    var spl={a:Int->a*a}
     println(spl(7));
+
     println("Two Parameter Lamda");
     var tpl={a:Int,b:Int->a*b};
     println(tpl(8,9));
+
     println("Lamda with Function Arguement ");
    val res =calculate(5,6){x,y->x*y};
     println(res);
+
     println("lamda funcion with fraction  in function without argument");
     var fracvalue=fraction(){d,c->d+c};
     println(fracvalue);
+
     println("Lambda with Type Inference");
     var value={a:Int->a*10};
     println(value(8))
+
     println("Lambda with it (Implicit Name)");
     var lit={it :Int ->it* 5}
     println(lit(4));
