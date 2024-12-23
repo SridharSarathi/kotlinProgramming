@@ -41,4 +41,13 @@ fun main(){
     {
             print(i);
     }
+    println();
+   var Str="print";
+    var em="";
+    for(i in 0 until Str.length)
+    {
+        em=Str[i]+em;
+    }
+    println(em);
+
 }
