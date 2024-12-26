@@ -3,15 +3,19 @@ fun main()
 {    println("Single Level inheritance");
     var obj=child();
     obj.say()
-    println("");
-    println( add(2,7));
     println("Multilevel Inheritance ");
     var D= dog()
+    var b=bird();
     D.sound();
+    b.sound();
+
+    println("Hierachical Inheritance ");
+    var t=Tamil()
+    t.Song();
+    var k=kerala();
+    k.Song();
     }
 
-
-fun add(s:Int,t:Int)=s+t;
 open class parent
 {
    open fun say()
@@ -33,17 +37,42 @@ open class animal
         println("shout");
     }
 }
-class dog:animal()
+open class dog:animal()
 {
   override  fun sound()
     {
         println("Dog is Barking")
     }
 }
-class bird{
-    fun sound()
+class bird:dog(){
+    override fun sound()
     {
         println("Bird is whistling");
     }
 }
 
+open class India
+{
+   open fun Song()
+    {
+        println("India is Our Country");
+    }
+}
+class Tamil:India()
+{
+
+}
+class kerala:India()
+{
+    override fun Song()
+    {
+        println("This is Kerala");
+    }
+}
+class Karnadaka :India()
+{
+    override fun Song()
+    {
+        println("This is Karnataka");
+    }
+}
