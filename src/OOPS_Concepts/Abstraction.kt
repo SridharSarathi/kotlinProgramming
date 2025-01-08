@@ -9,7 +9,7 @@ var A=Aliens()
 }
 abstract class Human
 {
-    abstract fun Think()
+    abstract fun Think();
 
 }
 class Aliens:Human()

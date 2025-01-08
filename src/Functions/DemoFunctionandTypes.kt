@@ -6,7 +6,7 @@ fun main()
     print(NoparameterWithRetrun());
     NoparameterNoRetrun();
     println(vote(9));
-    println(greet())
+    println(greet(""))
 
 }
 fun ParameterWithReturn(i:Int,S:Float):Float

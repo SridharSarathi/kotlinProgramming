@@ -1,27 +1,28 @@
 package Functions
-fun main()
-{//higher order function
-      var goal=say(::greet);
-      println(goal);
 
-        println("Higher-Order Function Taking Another Function as a Parameter");
-        var add= Arithemeticoperation(5,8){ x, y -> x+y}
-        var sub=Arithemeticoperation(5,8){x,y -> x-y}
-                //method(param,param){ par1,par3->opration(+,/,-,*)}
-                                      //lamda
-            println(" adding performance using operation "+add)
-            println(" adding performance using operation "+sub)
-println("Higher-Order Function Returning Another Function ");
+fun main() {//higher order function
+    var goal = say { greet("Sankar") }
+    println(goal)
+
+    println("Higher-Order Function Taking Another Function as a Parameter");
+    var add = Arithemeticoperation(5, 8) { x, y -> x + y }
+    var sub = Arithemeticoperation(5, 8) { x, y -> x - y }
+    //method(param,param){ par1,par3->opration(+,/,-,*)}
+    //lamda
+    println(" adding performance using operation " + add)
+    println(" adding performance using operation " + sub)
+    println("Higher-Order Function Returning Another Function ")
     val multiplyBy2 = createMultiplier(2)
-    println("   Higher order Function Return value  "+multiplyBy2(5));
-
+    println("   Higher order Function Return value  " + multiplyBy2(5));
 
 
 }
-fun say(saying:()->String ):String
-{  return saying();  }
 
-fun greet():String="thanks";
+fun say(saying: () -> String): String {
+    return saying();
+}
+
+fun greet(name: String): String = "Hi $name"
 
 //package Functions
 //
@@ -39,10 +40,10 @@ fun greet():String="thanks";
 
 //1. Higher-Order Function Taking Another Function as a Parameter
 
-fun Arithemeticoperation(a:Int,b:Int,addition:(Int,Int)->Int):Int
-{
-        return addition(a,b);
+fun Arithemeticoperation(a: Int, b: Int, addition: (Int, Int) -> Int): Int {
+    return addition(a, b);
 }
+
 //2.Higher-Order Function Returning Another Function
 fun createMultiplier(multiplier: Int): (Int) -> Int {
 
