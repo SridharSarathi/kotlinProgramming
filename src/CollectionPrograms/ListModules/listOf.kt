@@ -6,6 +6,7 @@ fun main()
     val lis= listOf(12,34,234,1243)
     val lis2= listOf("a",'s',90.9F,"String",90)
     var list = listOf(1,2,3,"Ajay","Vijay","Prakash")//read only, fix-size
+
     for(i in lis) {
         println(i)
     }
@@ -13,14 +14,15 @@ fun main()
 
     for(ele in lis2)
     {
-      println("$ele ")
+        println("$ele ")
     }
     for(elem in 0..list.size-1)
     {
-       print("${list[elem]},")
+        print("${list[elem]},")
     }
     println()
-    println("Get index "+stringList.get(0))
+    println()
+    println("Get index 0 "+stringList.get(0))
     println(stringList.indexOf("Vijay"))
     println(stringList.lastIndexOf("Vijay"))
     println(stringList.size)

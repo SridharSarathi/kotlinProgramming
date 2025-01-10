@@ -4,19 +4,22 @@ package Function
 fun main(){
      var mylamda={a:Int-> a+89; }
     println(mylamda(10));//99
-   var candy= listOf(
+
+     var candy= listOf(
        choclate("Cadbury",100),
        choclate("Munch",20),
        choclate("milky Bar",80)
-      );
-    var result=candy.maxBy { choclate-> choclate.price}
-    println(result);
+       );
 
-println("Lamda");
-    var greet={" Hello Java"};
+     var result=candy.maxBy { choclate-> choclate.price}
+     println(result);
+
+    println("Lamda");
+    var greet={"Hello Java"};
     println(greet());
+
     println("Single Parameter Lamda");
-   var spl={a:Int->a*a}
+    var spl={a:Int->a*a}
     println(spl(7));
 
     println("Two Parameter Lamda");
@@ -39,7 +42,7 @@ println("Lamda");
     var lit={it :Int ->it* 5}
     println(lit(4));
 
-println("Lambda as a Return Value");
+    println("Lambda as a Return Value");
 
     val double = getMultiplier(2)
    // println(double(50))  // Output: 10
